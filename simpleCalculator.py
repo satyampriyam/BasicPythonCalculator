@@ -1,7 +1,10 @@
 def main():
-    a = int(input("Enter first number"))
-    b = int(input("Enter second number"))
-    op = input("Enter operator")
+    print("Enter a basic expression to be evaluated")
+    s = input()
+    oper = s.split(' ')
+    a = int(oper[0])
+    b = int(oper[2])
+    op = oper[1]
 
     if op == '+':
         print(a+b)
